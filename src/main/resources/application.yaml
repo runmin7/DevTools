@@ -1,6 +1,7 @@
 document:
     type: 
-        html: 
+        html:
+            TS: aa
             JS:
                 - function:
                     name: globalScriptLib
