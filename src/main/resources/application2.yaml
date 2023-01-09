@@ -1,0 +1,39 @@
+document:
+    type: 
+        html: 
+            JS:
+                - function:
+                    name: globalScriptLib
+                    function : 
+                        - function : documentredy
+                - function:
+                    name: jsGetApprLineByCode
+                - function:
+                    name: formSubmit
+                - function:
+                    name: shown.bs.collapse
+            body:
+                - tag:
+                    type: div
+                    id: result
+                    class: s2
+                - tag:
+                    type: form
+                    id: frmMain
+                    name: frmMain
+                    method: post
+                    action: /common/approval/process
+                - tag:
+                    type: table
+                    id: table1
+                    class: style2
+                    tag:
+                        - tag:
+                            type: tr
+                            child: 
+                                - tag:
+                                    type: td
+                                - tag:
+                                    type: td
+                        - tag:
+                            type: tr
