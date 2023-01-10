@@ -1,8 +1,5 @@
-spring:
-  config:
-    import: classpath:/sam.yaml
-
-sample: aa
+sample: bb
+test: goo
 listSample:
     - minho
     - minho2
