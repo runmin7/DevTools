@@ -1,4 +1,4 @@
-package com.example.restservice;
+package com.lab.yaml.pojo;
 
 import java.math.BigDecimal;
 

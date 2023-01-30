@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ToolsApplication {
+public class ToolsMain {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ToolsApplication.class, args);
+		SpringApplication.run(ToolsMain.class, args);
 	}
 }
