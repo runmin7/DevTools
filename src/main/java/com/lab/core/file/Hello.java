@@ -1,6 +1,7 @@
 package com.lab.core.file;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.restservice.Greeting;
+import com.fasterxml.jackson.core.exc.StreamReadException;
+import com.fasterxml.jackson.databind.DatabindException;
 
 @RestController
 public class Hello {
@@ -45,9 +48,14 @@ public class Hello {
 	public String yaml2() {
 		return config.toString();
 	}
-	
+
 	@GetMapping("/yaml3")
 	public String yaml3() throws FileNotFoundException {
 		return load.print();
+	}
+	
+	@GetMapping("/yaml4")
+	public String yaml4() throws StreamReadException, DatabindException, IOException {
+		return load.print2();
 	}
 }
